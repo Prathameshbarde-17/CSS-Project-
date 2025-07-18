@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reponsive Flexbox</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .main {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 30px;
+        text-align: center;
+      }
+      .flex {
+        background-color: gray;
+        flex: 100%;
+        padding: 10px;
+      }
+      .flex2 {
+        background-color: rgb(110, 110, 255);
+        flex: 100%;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Responsive flexbox property</h1>
+
+    <p>Different layout for different screen sizes</p>
+
+    <p>Browser window</p>
+
+    <div class="main">
+      <div class="flex">1</div>
+
+      <div class="flex2">2</div>
+    </div>
+  </body>
+</html>

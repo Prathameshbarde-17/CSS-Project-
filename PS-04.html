@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem statement</title>
+    <style>
+      body {
+        margin: 50px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 120px;
+        grid-template-areas:
+          "header content"
+          "sidebar content";
+        grid-gap: 4px;
+        background-color: #fff;
+        color: #444;
+      }
+      .box {
+        background-color: #444;
+        color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .header {
+        background-color: #999;
+        grid-area: header;
+      }
+      .sidebar {
+        grid-area: sidebar;
+      }
+      .content {
+        grid-area: content;
+      }
+      .overlay {
+        background-color: red;
+        z-index: 10;
+        grid-column: content-start / content-end;
+        grid-row: header-start / content-end;
+      }
+    </style>
+  </head>
+  <style></style>
+  <body>
+    <div class="container">
+      <div class="box header">Header</div>
+      <div class="box content">Content</div>
+      <div class="box sidebar">Sidebar</div>
+      <div class="box overlay">overlay</div>
+    </div>
+  </body>
+</html>

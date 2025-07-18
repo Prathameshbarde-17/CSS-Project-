@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Problem statement</title>
+  </head>
+  <style>
+    body {
+      margin: 50px;
+    }
+    .container {
+      display: grid;
+      background-color: #fff;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 10px;
+    }
+    .item {
+      background-color: #444;
+      color: #fff;
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 150%;
+    }
+    .a {
+      grid-column: 1/3;
+      grid-row: 1;
+    }
+    .b {
+      grid-column: 3;
+      grid-row: 1/3;
+    }
+    .c {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .d {
+      grid-column: 2;
+      grid-row: 2;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item a">A</div>
+      <div class="item b">B</div>
+      <div class="item c">C</div>
+      <div class="item d">D</div>
+    </div>
+  </body>
+</html>
