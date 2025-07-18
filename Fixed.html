@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Side bar</title>
+  </head>
+  <style>
+    .container {
+      width: 150px;
+      background-color: #111;
+      top: 0;
+      left: 0;
+      overflow-x: hidden;
+      padding: 20px;
+    }
+    .container a {
+      color: aliceblue;
+      padding: 10px;
+      display: block;
+    }
+    .container a:hover {
+      color: #18d1b8;
+    }
+    @media screen and (max-height: 450px) {
+      .container (padding-top:15px;) .container a (font-size:18px;);
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Support</a>
+    </div>
+  </body>
+</html>
